@@ -97,11 +97,17 @@ header .animated {
 	background-size:cover;
 	text-align:center;
 }
-.atuacao {
-	background:url(../img/atuacao.jpg) top !important;
+.nossa-atuacao {
+	background:url(../img/nossa-atuacao.jpg) top !important;
+}
+.quem-somos {
+	background:url(../img/quem-somos.jpg) top !important;
 }
 .parceiros {
 	background:url(../img/parceiros.jpg) top !important;
+}
+.contato {
+	background:url(../img/contato.jpg) top !important;
 }
 #subheader h1{
 	font-family:"Open Sans", Arial, Helvetica, sans-serif;
@@ -201,6 +207,9 @@ padding:0;
 }
 .teaser{
 	font-size:18px;
+	line-height:1.7em;
+}
+.text-line {
 	line-height:1.7em;
 }
 
@@ -322,7 +331,9 @@ color:#fff;
 /* logo
 /*------------------------------ */
 #logo{
-text-align:center;
+	text-align:center;
+	margin-left: -30px;
+	margin-top: 10px;
 }
 #logo .inner{
  	display:table-cell;

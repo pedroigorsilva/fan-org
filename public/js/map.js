@@ -4,11 +4,11 @@
                     function init() {
                         // Basic options for a simple Google Map
                         // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-                        var myLatlng = new google.maps.LatLng(40.6700, -73.9400);
+                        var myLatlng = new google.maps.LatLng(-19.9217246,-43.9232729);
 
                         var mapOptions = {
                             // How zoomed in you want the map to start at (always required)
-                            zoom: 11,
+                            zoom: 15,
                             disableDefaultUI: true,
 							scrollwheel: false,
 

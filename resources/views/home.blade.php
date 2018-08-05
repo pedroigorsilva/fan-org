@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'F.A.N - Fundo de amparo ao necessitado')
+@section('title', 'F.A.N. - Fundo de amparo ao necessitado')
 
 @section('content')
     <!-- slider -->
@@ -46,7 +46,7 @@
                             data-speed="800"
                             data-start="1400"
                             data-easing="easeInOutCubic">
-                            Atuamos para reduzir a miséria, a fome e a violência através da integração das<br /> pessoas carentes à sociedade, de forma autossustentável e com padrão de vida digno
+                            Atuamos para reduzir a miséria, a fome e a violência através da integração das<br /> pessoas carentes à sociedade, de forma autossustentável e com padrão de vida digno.
                         </div>
 
                         <div class="tp-caption sfb text-left"
@@ -55,7 +55,7 @@
                             data-speed="800"
                             data-start="1600"
                             data-easing="easeInOutCubic">
-                            <a class="btn btn-slider" href="{{ url('/') }}#quem-somos">Leia mais</a>
+                            <a class="btn btn-slider" href="{{ url('/quem-somos') }}">Leia mais</a>
                         </div>
                     </li>
                     <li data-transition="fade" data-slotamount="10" data-masterspeed="1500">
@@ -96,7 +96,7 @@
                                 data-speed="800"
                                 data-start="1600"
                                 data-easing="easeInOutCubic">
-                                <a class="btn btn-slider" href="{{ url('participe') }}">Leia mais</a>
+                                <a class="btn btn-slider" href="{{ url('participe-do-fan') }}">Leia mais</a>
                             </div>
                         </li>
                 </ul>
@@ -111,57 +111,72 @@
     <!-- content begin -->
         <div id="quem-somos" class="no-padding">
             <!-- section begin -->
-            <section id="section-text">
+            <section id="section-text-2" class="no-padding-bottom">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 col-md-offset-2 text-center wow fadeInUp">
-                            <h2>Quem somos</h2>
-                            <div class="divider-single"></div>
+                        <div class="col-md-6 wow fadeInLeft" data-wow-delay=".5s">
+                            <h1>Nossa Missão</h1>
+                            <p>
+                            	Recuperar pessoas que que vivem à margem da sociedade em estado de privação, vulnerabilidade e exclusão, capacitando-as a autossustentarem-se.
+                            </p>
+                            <br />
+                            <h1>Nossa visão</h1>
+                            <p>
+                                Formar e manter comunidades rurais e urbanas que possibilite as pessoas recuperadas a se organizar para viverem com qualidade de vida, menor custo, obtendo renda através de atividades de economia solidária.			
+                            </p>
                         </div>
-
-                        <div class="col-md-4 wow fadeInRight" data-wow-delay=".5s">
-                            <img src="img/about/1.jpg" class="img-responsive" alt="">
-                            <h3>O F.A.N.</h3>
-                            Fundo de Amparo ao Necessitado é uma associação de pessoas que ajudam e contribuem com recursos materiais, humanos e financeiros para desenvolver programas sociais. É um espaço social para acolher os que querem ajudar e os que precisam de ajuda.
-                            <br>
-                            <br>
-                        </div>
-                        <div class="col-md-4 wow fadeInRight" data-wow-delay=".75s">
-                            <img src="img/about/2.jpg" class="img-responsive" alt="">
-                            <h3>Nossa atuação</h3>
-                            Somos um grupo de pessoas físicas e jurídicas que acreditam que organizados poderão fazer diferença na vida das pessoas que vivem à margem da sociedade, proporcionando dignidade para os moradores de rua, deficientes, dependentes de drogas, crianças, jovens, adultos e idosos abandonados e sem esperança.
-                            <br>
-                            <br>
-                        </div>
-                        <div class="col-md-4 wow fadeInRight" data-wow-delay="1s">
-                            <img src="img/about/3.jpg" class="img-responsive" alt="">
-                            <h3>Participe do F.A.N</h3>
-                            Nosso propósito é reduzir a MISÉRIA, A FOME E A VIOLÊNCIA através da integração das pessoas carentes à sociedade, de forma autossustentável e com padrão de vida digno. Uma vez integradas, estas pessoas poderão também contribuir para a manutenção de programas sociais que amparam pessoas carentes.
-                            <br>
-                            <br>
-                        </div>
-                        
-                        <div class="divider-single"></div>
-                        <div class="col-md-2 wow fadeInRight" data-wow-delay="1s"></div>
-
-                        <div class="col-md-4 wow fadeInRight" data-wow-delay="1s">
-                            <img src="img/about/4.jpg" class="img-responsive" alt="">
-                            <h3>Nossa missão</h3>
-                            Recuperar pessoas que que vivem à margem da sociedade em estado de privação, vulnerabilidade e exclusão, capacitando-as a autossustentarem-se.
-                            <br>
-                            <br>
-                        </div>
-                        <div class="col-md-4 wow fadeInRight" data-wow-delay="1s">
-                            <img src="img/about/5.jpg" class="img-responsive" alt="">
-                            <h3>Visão</h3>
-                            Formar e manter comunidades rurais e urbanas que possibilite as pessoas recuperadas a se organizar para viverem com qualidade de vida, menor custo, obtendo renda através de atividades de economia solidária.
-                            <br>
-                            <br>
+                        <div class="col-md-6 wow fadeInUp">
+                            <img src="img/misc/pic-4.png" class="img-responsive" alt="">
                         </div>
                     </div>
                 </div>
             </section>
             <!-- section close -->
+
+            <section id="section-gallery">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center">
+                            <h2>Galeria</h2>
+                            <div class="divider-double"></div>
+                        </div>
+
+                        <div id="gallery-isotope" class="col-md-12 wow fadeInUp" data-wow-delay=".25s">
+                            <div class="item small-pic">
+                                <a href="img/gallery/5.jpg" data-gal="prettyPhoto[galllery]"><span class="overlay"></span></a>
+                                <img src="img/gallery/5-800x800.jpg" alt="">
+                            </div>
+
+                            <div class="item small-pic">
+                                <a href="img/gallery/6.jpg" data-gal="prettyPhoto[galllery]"><span class="overlay"></span></a>
+                                <img src="img/gallery/6-800x800.jpg" alt="">
+                            </div>
+
+                            <div class="item wide-pic">
+                                <a href="img/gallery/1.jpg" data-gal="prettyPhoto[galllery]"><span class="overlay"></span></a>
+                                <img src="img/gallery/1.jpg" alt="">
+                            </div>
+
+                            <div class="item wide-pic">
+                                <a href="img/gallery/4.jpg" data-gal="prettyPhoto[galllery]"><span class="overlay"></span></a>
+                                <img src="img/gallery/4.jpg" alt="">
+                            </div>
+
+                            <div class="item small-pic">
+                                <a href="img/gallery/3.jpg" data-gal="prettyPhoto[galllery]"><span class="overlay"></span></a>
+                                <img src="img/gallery/3-800x800.jpg" alt="">
+                            </div>
+
+                            <div class="item small-pic">
+                                <a href="img/gallery/2.jpg" data-gal="prettyPhoto[galllery]"><span class="overlay"></span></a>
+                                <img src="img/gallery/2-800x800.jpg" alt="">
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!-- section begin -->
             <section id="latest-sermons">
@@ -190,7 +205,7 @@
                                     </div>
                                 </div>
                                 <div class="right-col">
-                                    <a href="{{ url('parceiros') }}" title="Mais detalhes">
+                                    <a href="{{ url('entidades-parceiras') }}" title="Mais detalhes">
                                     	<i class="fa fa-info-circle"></i>
                                     </a>
                                 </div>

@@ -23,8 +23,8 @@
                         <!-- logo begin -->
                         <div id="logo">
                             <div class="inner">
-                                <a href="index.html">
-                                    <img src="img/logo.png" alt="" class="logo-1">
+                                <a href="{{ url('/') }}">
+                                    <img src="img/logo_fan_new.png" alt="" class="logo-1">
                                     <img src="img/logo-2.png" alt="" class="logo-2">
                                 </a>
 
@@ -39,19 +39,12 @@
                         <!-- mainmenu begin -->
                         <div id="mainmenu-container">
                             <ul id="mainmenu">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="{{ url('/') }}#quem-somos">Quem somos</a></li>
-                                <li><a href="{{ url('atuacao') }}">Nossa atuação</a></li>
-                                <li><a href="{{ url('parceiros') }}">Entidades parceiras</a></li>
-                                <li>
-                                    <a href="gallery.html">Participe do F.A.N</a>
-                                    <ul>
-                                        <li><a href="events.html">Doações avulsas</a></li>
-                                        <li><a href="events-calendar.html">Faça sua filiação</a></li>
-                                        <li><a href="events.html">Projeto</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html">Contato</a></li>
+                                <li><a href="{{ url('/') }}">Home</a></li>
+                                <li><a href="{{ url('/quem-somos') }}">Quem somos</a></li>
+                                <li><a href="{{ url('/nossa-atuacao') }}">Nossa atuação</a></li>
+                                <li><a href="{{ url('/entidades-parceiras') }}">Entidades parceiras</a></li>
+                                <li><a href="{{ url('/participe-do-fan') }}">Participe do F.A.N.</a></li>
+                                <li><a href="{{ url('/contato') }}">Contato</a></li>
                             </ul>
                         </div>
                         <!-- mainmenu close -->
@@ -68,17 +61,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        &copy; Copyiright 2018 - F.A.N
+                        &copy; Copyiright 2018 - F.A.N.
                     </div>
                     <div class="col-md-6">
                         <nav>
                             <ul>
                                 <li><a href="{{ url('/') }}">Home</a></li>
-                                <li><a href="events.html">Quem somos</a></li>
-                                <li><a href="{{ url('atuacao') }}">Nossa atuação</a></li>
-                                <li><a href="{{ url('parceiros') }}">Entidades parceiras</a></li>
-                                <li><a href="gallery.html">Participe do F.A.N</a></li>
-                                <li><a href="contact.html">Contato</a></li>
+                                <li><a href="{{ url('/quem-somos') }}">Quem somos</a></li>
+                                <li><a href="{{ url('nossa-atuacao') }}">Nossa atuação</a></li>
+                                <li><a href="{{ url('entidades-parceiras') }}">Entidades parceiras</a></li>
+                                <li><a href="{{ url('participe-do-fan') }}">Participe do F.A.N.</a></li>
+                                <li><a href="{{ url('contato') }}">Contato</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -101,6 +94,8 @@
     <script src="js/jquery.plugin.js"></script>
     <script src="js/jquery.countdown.js"></script>
     <script src="js/countdown-custom.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="js/map.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/custom.js"></script>
 

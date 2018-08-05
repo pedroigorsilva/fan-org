@@ -18,7 +18,7 @@
         <div class="pp_content"> \
          <div class="pp_loaderIcon"></div> \
          <div class="pp_fade"> \
-          <a href="#" class="pp_expand" title="Expand the image">Expand</a> \
+          <a href="#" class="pp_expand" title="Expandir a imagem">Expandir</a> \
           <div class="pp_hoverContainer"> \
            <a class="pp_next" href="#">next</a> \
            <a class="pp_previous" href="#">previous</a> \
@@ -32,7 +32,7 @@
            </div> \
            <p class="pp_description"></p> \
            <div class="pp_social">{pp_social}</div> \
-           <a class="pp_close" href="#">Close</a> \
+           <a class="pp_close" href="#">Fechar</a> \
           </div> \
          </div> \
         </div> \

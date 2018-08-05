@@ -15,14 +15,22 @@ $router->get('/', function () use ($router) {
     return view('home');
 });
 
-$router->get('/atuacao', function () use ($router) {
-    return view('atuacao');
+$router->get('/nossa-atuacao', function () use ($router) {
+    return view('nossa-atuacao');
 });
 
-$router->get('/parceiros', function () use ($router) {
-    return view('parceiros');
+$router->get('/entidades-parceiras', function () use ($router) {
+    return view('entidades-parceiras');
 });
 
-$router->get('/participe', function () use ($router) {
-    return view('participe');
+$router->get('/participe-do-fan', function () use ($router) {
+    return view('participe-do-fan');
+});
+
+$router->get('/quem-somos', function () use ($router) {
+    return view('quem-somos');
+});
+
+$router->get('/contato', function () use ($router) {
+    return view('contato');
 });
